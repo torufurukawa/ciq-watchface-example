@@ -9,6 +9,8 @@ class SampleWatchFaceApp extends App.AppBase {
 
     // onStart() is called on application start up
     function onStart(state) {
+   		System.println("#### started");
+   		Log.info("#### started");
     }
 
     // onStop() is called when your application is exiting
