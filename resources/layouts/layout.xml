@@ -1,4 +1,7 @@
 <layout id="WatchFace">
     <drawable class="Background" />
     <label id="TimeLabel" x="center" y="center" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLUE" />
+    <drawable-list id="LogoContainer">
+      <bitmap id="logo" x="0" y="0" filename="../drawables/logo.png" />
+    </drawable-list>
 </layout>

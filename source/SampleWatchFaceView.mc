@@ -13,6 +13,11 @@ class SampleWatchFaceView extends Ui.WatchFace {
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
+        
+       // draw image
+       var image = Ui.loadResource(Rez.Drawables.logo);
+       dc.drawBitmap(0, 0, image);
+
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -43,7 +48,7 @@ class SampleWatchFaceView extends Ui.WatchFace {
         var view = View.findDrawableById("TimeLabel");
         view.setColor(App.getApp().getProperty("ForegroundColor"));
         view.setText(timeString);
-
+       
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
