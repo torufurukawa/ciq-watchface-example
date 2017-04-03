@@ -13,11 +13,6 @@ class SampleWatchFaceView extends Ui.WatchFace {
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
-        
-       // draw image
-       var image = Ui.loadResource(Rez.Drawables.logo);
-       dc.drawBitmap(0, 0, image);
-
     }
 
     // Called when this View is brought to the foreground. Restore
