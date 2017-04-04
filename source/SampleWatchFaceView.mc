@@ -23,6 +23,8 @@ class SampleWatchFaceView extends Ui.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
+    System.print("####");
+    System.println(App.getApp().getProperty("UseMilitaryFormat"));
         // Get the current time and format it correctly
         var timeFormat = "$1$:$2$";
         var clockTime = Sys.getClockTime();
@@ -42,6 +44,9 @@ class SampleWatchFaceView extends Ui.WatchFace {
         // Update the view
         var view = View.findDrawableById("TimeLabel");
         view.setColor(App.getApp().getProperty("ForegroundColor"));
+        view.setColor(0x00FF00);
+        System.print("#### ForegroundColor: ");
+        System.println(0x00FF00);
         view.setText(timeString);
        
         // Call the parent onUpdate function to redraw the layout

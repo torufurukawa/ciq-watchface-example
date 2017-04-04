@@ -1,11 +1,4 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
-    <drawable-list id="Background">
-		<shape type="rectangle" x="0" y="0" width="fill" height="dc.getHeight()/2" color="Gfx.COLOR_BLUE" />
-		<shape type="rectangle" x="0" y="dc.getHeight()/2" width="fill" height="dc.getHeight()/2" color="Gfx.COLOR_RED" />
-		<shape type="rectangle" x="0" y="dc.getHeight()/2-5" width="fill" height="10" color="Gfx.COLOR_YELLOW" />
-	</drawable-list>
-    <drawable-list id="LogoContainer">
-      <bitmap id="logo" x="0" y="0" filename="logo.png" />
-    </drawable-list>
+    
 </drawables>
